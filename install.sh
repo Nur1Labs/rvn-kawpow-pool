@@ -9,7 +9,7 @@ echo "Installing... Please wait!"
 sleep 3
 
 sudo rm -rf /usr/lib/node_modules
-sudo apt remove --purge -y nodejs node
+sudo apt remove --purge -y nodejs
 sudo rm /etc/apt/sources.list.d/nodesource.list*
 sudo apt update
 sudo apt upgrade -y
