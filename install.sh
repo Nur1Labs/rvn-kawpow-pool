@@ -9,7 +9,7 @@ echo "Installing... Please wait!"
 sleep 3
 
 sudo rm -rf /usr/lib/node_modules
-sudo apt remove --purge -y nodejs
+sudo apt remove --purge -y nodejs npm
 sudo rm /etc/apt/sources.list.d/nodesource.list*
 sudo apt update
 sudo apt upgrade -y
@@ -32,12 +32,12 @@ source ~/.bashrc
 sudo chown -R $USER:$GROUP ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install v9
-nvm use v9
+nvm install v10
+nvm use v10
 npm update -g
 npm i -g npm
 
-npm install -g webpack@4.29.3 pm2@4.2.1
+npm install -g webpack@4.29.3 pm2@4.2.2
 npm install -g npm@latest
 
 npm install
